@@ -1,0 +1,141 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #023047; /* Azul oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background: #ffb703; /* Amarillo vibrante */
+    color: #023047; /* Azul oscuro */
+}
+
+/* Estilos Responsive de la barra de navegación */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #023047; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 15px;
+}
+
+.footer .social-icons {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+    color: #ffb703; /* Amarillo vibrante */
+}
+
+/* Botones */
+button {
+    background: #023047; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ffb703; /* Amarillo vibrante */
+    color: #023047;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #023047;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+}

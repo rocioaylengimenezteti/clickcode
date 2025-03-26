@@ -1,0 +1,17 @@
+[
+    {
+        "titulo": "Nuevo proyecto en desarrollo",
+        "descripcion": "Estamos trabajando en una nueva plataforma de automatización.",
+        "fecha": "12 de marzo de 2025"
+    },
+    {
+        "titulo": "Mejoramos la ciberseguridad",
+        "descripcion": "Hemos implementado nuevas herramientas de protección para nuestros clientes.",
+        "fecha": "5 de marzo de 2025"
+    },
+    {
+        "titulo": "Nuevas oportunidades de empleo",
+        "descripcion": "Buscamos desarrolladores web y expertos en seguridad informática.",
+        "fecha": "1 de marzo de 2025"
+    }
+]

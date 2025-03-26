@@ -1,0 +1,60 @@
+/* Estilos del encabezado */
+header {
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Estilos del título */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(0, 123, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Estilos de la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria a { 
+    display: block;
+    width: 400px; /* Aumentamos el ancho */
+    height: 300px; /* Aumentamos la altura */
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Usa 'cover' para que se recorte o 'contain' si quieres verla completa */
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}

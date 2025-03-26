@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Code - Presupuesto</title>
+    <!-- Enlace a hojas de estilo generales y específicas de la página -->
+    <link rel="stylesheet" href="../css/estilos-generales.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación con logo y menú -->
+        <nav class="navbar">
+            <div class="logo">Click & Code</div>
+            <div class="menu-toggle">☰</div> <!-- Botón menú hamburguesa -->
+            <ul>
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Solicita tu presupuesto</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para solicitar presupuesto -->
+        <form id="presupuestoForm">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <!-- Campos para ingresar los datos del usuario -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="15"  required>
+                <span class="error" id="errorNombre"></span>
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+                <span class="error" id="errorApellidos"></span>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" maxlength="9" pattern="[0-9]{9}" required>
+                <span class="error" id="errorTelefono"></span>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="errorEmail"></span>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <!-- Selección del tipo de producto -->
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto">
+                    <option value="100">Página Web Básica - 100€</option>
+                    <option value="200">E-commerce - 200€</option>
+                    <option value="300">App Web - 300€</option>
+                </select>
+                <!-- Selección del plazo -->
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" name="plazo" min="1" max="24" value="1">
+                
+                <fieldset>
+                    <legend>Extras:</legend>
+                    <!-- Opciones de servicios adicionales -->
+                    <label><input type="checkbox" class="extra" value="20"> Dominio y Hosting - 20€</label>
+                    <label><input type="checkbox" class="extra" value="50"> SEO Básico - 50€</label>
+                    <label><input type="checkbox" class="extra" value="100"> Mantenimiento Mensual - 100€</label>
+                </fieldset>
+                
+                <p>Presupuesto total: <span id="total">0</span>€</p>
+                <input type="hidden" id="totalPresupuesto" name="totalPresupuesto">
+            </fieldset>
+            <!-- Aceptación de condiciones -->
+            <label><input type="checkbox" id="condiciones"> Acepto las condiciones</label>
+            <!-- Botones para enviar y resetear el formulario -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </main>
+    
+    <footer class="footer">
+         <!-- Iconos de redes sociales con enlaces -->
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" width="30">
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30">
+            </a>            
+        </div>
+        <!-- Información de contacto en el pie de página -->
+        <div class="direccion">
+            <p>Camí Real 123, Valencia, España</p>
+            <p>Teléfono: +34 600 000 000</p>
+            <p>Email: contacto@gmail.com</p>
+        </div>
+        <!-- Enlace al aviso legal -->
+        <div class="legal">
+            <a href="aviso-legal.html">Aviso Legal</a>
+        </div>
+    </footer>
+    <!-- Archivos JavaScript para funcionalidades de la página -->
+    <script src="../js/presupuesto.js"></script>
+    <script src="../js/general.js"></script>
+</body>
+</html>

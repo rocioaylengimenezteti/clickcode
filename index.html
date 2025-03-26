@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Code</title>
+    <!-- Enlace a hojas de estilo generales y específicas de la página -->
+    <link rel="stylesheet" href="./css/estilos-generales.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Carga de datos desde un archivo JSON -->
+    <script defer src="./data/noticias.json"></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación con logo y menú -->
+        <nav class="navbar">
+            <div class="logo">Click & Code</div>
+            <div class="menu-toggle">☰</div> <!-- Botón menú hamburguesa -->
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="./views/galeria.html">Galería</a></li>
+                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="./views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <!-- Sección principal con mensaje de bienvenida -->
+        <section class="hero">
+            <h1>Bienvenido a Click & Code</h1>
+            <p>Transformamos ideas en soluciones digitales innovadoras.</p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicio">
+                <h3>Desarrollo Web</h3>
+                <p>Diseñamos y programamos sitios web optimizados y atractivos.</p>
+            </div>
+            <div class="servicio">
+                <h3>Seguridad Informática</h3>
+                <p>Protegemos tus datos y mejoramos la ciberseguridad de tu empresa.</p>
+            </div>
+            <div class="servicio">
+                <h3>Automatización</h3>
+                <p>Implementamos soluciones que optimizan el tiempo y los recursos.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Noticias y archivo JSON -->
+        <section class="noticias">
+            <h2>Últimas Noticias</h2>
+            <div id="contenedor-noticias">
+                <p>Cargando noticias...</p>
+            </div>
+            <p><a href="./data/noticias.json" target="_blank">Ver archivo JSON</a></p>
+        </section>        
+
+        <!-- Sección de Contacto -->
+        <section class="contacto">
+            <h2>Contacto Rápido</h2>
+            <p>Email: info@clickandcode.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Iconos de redes sociales con enlaces -->
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" width="30">
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30">
+            </a>            
+        </div>
+        <!-- Información de contacto en el pie de página -->
+        <div class="direccion">
+            <p>Camí Real 123, Valencia, España</p>
+            <p>Teléfono: +34 600 000 000</p>
+            <p>Email: contacto@gmail.com</p>
+        </div>
+        <!-- Enlace al aviso legal -->
+        <div class="legal">
+            <a href="aviso-legal.html">Aviso Legal</a>
+        </div>
+    </footer>
+    <!-- Archivos JavaScript para funcionalidades de la página -->
+    <script src="./js/general.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
